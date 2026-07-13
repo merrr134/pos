@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(php artisan storage:link; php artisan route:list --name=menus; php artisan route:list --name=categories)",
+      "PowerShell(php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan tinker --execute=\"auth\\(\\)->login\\(App\\\\Models\\\\User::where\\('role','admin'\\)->first\\(\\)\\); \\\\$html = app\\(App\\\\Http\\\\Controllers\\\\MenuController::class\\)->index\\(new Illuminate\\\\Http\\\\Request\\)->render\\(\\); echo 'MENU INDEX OK, length='.strlen\\(\\\\$html\\).PHP_EOL; \\\\$html2 = app\\(App\\\\Http\\\\Controllers\\\\CategoryController::class\\)->index\\(new Illuminate\\\\Http\\\\Request\\)->render\\(\\); echo 'CATEGORY INDEX OK, length='.strlen\\(\\\\$html2\\).PHP_EOL; \\\\$html3 = app\\(App\\\\Http\\\\Controllers\\\\MenuController::class\\)->create\\(\\)->render\\(\\); echo 'MENU CREATE OK, length='.strlen\\(\\\\$html3\\).PHP_EOL; \\\\$html4 = app\\(App\\\\Http\\\\Controllers\\\\CategoryController::class\\)->create\\(\\)->render\\(\\); echo 'CATEGORY CREATE OK, length='.strlen\\(\\\\$html4\\).PHP_EOL;\")",
+      "PowerShell(php artisan tinker \"C:\\\\Users\\\\sanzz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--laragon-www-pitou-cafe\\\\d680083f-d0c2-4e26-b8e3-7ee6a3ecf43d\\\\scratchpad\\\\smoke.php\")",
+      "PowerShell(php artisan tinker \"C:\\\\Users\\\\sanzz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--laragon-www-pitou-cafe\\\\d680083f-d0c2-4e26-b8e3-7ee6a3ecf43d\\\\scratchpad\\\\smoke2.php\")",
+      "PowerShell(php artisan route:list --name=tables; php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan tinker \"C:\\\\Users\\\\sanzz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--laragon-www-pitou-cafe\\\\d680083f-d0c2-4e26-b8e3-7ee6a3ecf43d\\\\scratchpad\\\\smoke3.php\")",
+      "PowerShell(php artisan route:list --name=kitchen; php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan tinker \"C:\\\\Users\\\\sanzz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--laragon-www-pitou-cafe\\\\d680083f-d0c2-4e26-b8e3-7ee6a3ecf43d\\\\scratchpad\\\\smoke6.php\")",
+      "PowerShell(npm install *)",
+      "PowerShell(php artisan route:list --name=dashboard; php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan route:list --name=transactions; php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan route:list --name=reports; php artisan view:cache; php artisan view:clear)",
+      "PowerShell(php artisan view:clear; php artisan view:cache)",
+      "PowerShell(php artisan tinker --execute=\"require 'C:/Users/sanzz/AppData/Local/Temp/claude/D--laragon-www-pitou-cafe/08a252bf-1ac2-4869-9e8d-69b4c80ea474/scratchpad/smoke_receipt.php';\")"
+    ]
+  }
+}

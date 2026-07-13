@@ -1,0 +1,30 @@
+/* Font brand: Inter + Playfair Display (via Bunny Fonts, privacy-friendly) */
+@import url('https://fonts.bunny.net/css?family=inter:400,500,600,700|playfair-display:600,700');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-cream text-slate-700 font-sans antialiased;
+    }
+}
+
+@layer components {
+    /* Hero header standar — SELALU pakai gradient brand (aturan brand ketat). */
+    .hero-header {
+        @apply bg-gradient-to-br from-brand to-brand-light text-white rounded-2xl px-6 py-5 shadow-sm;
+    }
+
+    .sidebar-link {
+        @apply flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white/70
+               transition hover:bg-white/10 hover:text-white;
+    }
+    .sidebar-link-active {
+        @apply bg-white/15 text-white;
+    }
+}
+
+/* Alpine: sembunyikan elemen ber-x-cloak sebelum Alpine siap */
+[x-cloak] { display: none !important; }
